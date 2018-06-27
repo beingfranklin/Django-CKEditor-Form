@@ -21,6 +21,13 @@
             <input type="submit" value="post">
         </p>
     </form>
+
+    <ul>
+        {%for i in data %}
+        <li>{{i.content|safe}}</li>
+
+        {%endfor%}
+    </ul>
     <script>
         $(document).ready(function () {
 
